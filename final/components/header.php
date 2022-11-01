@@ -29,7 +29,7 @@
 
 <header>
     <div class="logo-section">    
-        <a class="logo" href="#">
+        <a class="logo" href="index.php">
             <h4><span class="pink">Delish</span></h4>
             <h4><span class="orange">Dishes</span></h4>
         </a>
