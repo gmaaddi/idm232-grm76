@@ -1,0 +1,45 @@
+<?php
+
+// if $page_title variable doesn't exist, create a default one
+if (!isset($page_title)) {
+    $page_title = '🚨 Missing Title 🚨';
+}
+
+$site_title = 'DelishDishes';
+$document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo $document_title ; ?></title>
+  <link rel="stylesheet" href="dist/styles/styles.css">
+  <link rel="normalize" href="dist/styles/normalize.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo-section">    
+    <a class="logo" href="index.php">
+        <h4><span class="pink">Delish</span></h4>
+        <h4><span class="orange">Dishes</span></h4>
+    </a>
+  </div>
+    
+  <ul class="menu" id="menu">
+    <h5 class="menu-item"><li><a href="#">Recipes</a></li></h5>
+    <h5 class="menu-item"><li><a href="#">Search</a></li></h5>
+    <h5 class="menu-item"><li><a href="http://localhost:8888/final/list.php">Account</a></li><h5>
+  </ul>
+  
+  <div class="bar" id="bar">
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+  </div>
+</header>
