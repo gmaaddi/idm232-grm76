@@ -8,6 +8,7 @@ function get_recipes()
 {
     global $db_connection;
     $query = 'SELECT * FROM recipes';
+
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -20,13 +21,14 @@ function get_recipes()
  * @param  string $phone - phone number of the user
  * @return object - mysqli_result
  */
-function add_user($Id, $Recipe_name, $Level, $Servings)
+function add_recipe($Recipe_name, $Level, $Servings, $Prep_time, $Cook_time, $Total_time, $Ingredients, $Directions)
 {
     global $db_connection;
     $query = 'INSERT INTO recipes';
-    $query .= ' (Id, Recipe_name, Level, Servings)';
-    $query .= " VALUES ('$Id', '$Recipe_name', '$Level', '$Servings')";
+    $query .= ' (Recipe_name, Level, Servings, Prep_time, Cook_time, Total_time, Ingredients, Directions)';
+    $query .= " VALUES ('$Recipe_name', '$Level', '$Servings', '$Prep_time', '$Cook_time', '$Total_time', '$Ingredients', '$Directions')";
 
     $result = mysqli_query($db_connection, $query);
+    // echo $result;
     return $result;
 }
