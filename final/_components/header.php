@@ -17,15 +17,15 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $document_title ; ?></title>
-  <link rel="stylesheet" href="dist/styles/styles.css">
-  <link rel="normalize" href="dist/styles/normalize.css">
+  <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/styles.css">
+  <link rel="normalize" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
 </head>
 
 <body>
 
 <header>
   <div class="logo-section">    
-    <a class="logo" href="index.php">
+    <a class="logo" href="<?php echo site_url(); ?>/index.php">
         <h4><span class="pink">Delish</span></h4>
         <h4><span class="orange">Dishes</span></h4>
     </a>
@@ -34,7 +34,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   <ul class="menu" id="menu">
     <h5 class="menu-item"><li><a href="#">Recipes</a></li></h5>
     <h5 class="menu-item"><li><a href="#">Search</a></li></h5>
-    <h5 class="menu-item"><li><a href="http://localhost:8888/final/list.php">Account</a></li><h5>
+    <h5 class="menu-item"><li><a href="<?php echo site_url(); ?>/list.php">Account</a></li><h5>
   </ul>
   
   <div class="bar" id="bar">

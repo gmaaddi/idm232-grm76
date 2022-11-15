@@ -15,7 +15,8 @@
     <p> &copy; Gianna Maaddi <?php echo date('Y'); ?></p>
 </div>
 
-  <script src="dist/scripts/main.js"></script>
+  <!-- <script src="dist/scripts/main.js"></script> -->
+  <script src="<?php echo site_url(); ?>/dist/scripts/main.js"></script>
   </body>
 
   </html>
