@@ -1,6 +1,11 @@
-<?php include_once '../final/components/header.php'; ?>
+<?php
+// Make sure the path is correct for each include on this page. Delete this comment once done
+include_once __DIR__ . '/app.php';
+$page_title = 'Recipe Details';
+include_once __DIR__ . '/_components/header.php';
+?>
 
-    <div class="detail-container">
+<div class="detail-container">
         <div class="detail-text">
             <h2 class="detail-text-title">Bucatini Alfredo with Broccoli</h2> <br>
 
@@ -60,4 +65,4 @@
         </div>
     </section>
 
-<?php include_once '../final/components/footer.php'; ?>
+<?php include_once __DIR__ . '/_components/footer.php';
