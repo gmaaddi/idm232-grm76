@@ -48,7 +48,7 @@ if (!isset($recipe_results)) {
                     <td data-label='Servings'><h5>{$recipe_row['Servings']}</h5></td>
                     <td data-label='Actions'>
                         <a href='{$site_url}/admin/recipes/edit.php?Id={$recipe_row['Id']}'> <button class='action-btn'><h5>Edit</h5></button></a>
-                        <button class='action-btn'><h5>Delete</h5></button>
+                        <a href='{$site_url}/admin/recipes/delete.php?Id={$recipe_row['Id']}'> <button class='action-btn'><h5>Delete</h5></button></a>
                     </td>
                 </tr>
 
