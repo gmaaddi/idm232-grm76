@@ -19,6 +19,8 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   <title><?php echo $document_title ; ?></title>
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/styles.css">
   <link rel="normalize" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
+
+  <script src="https://cdn.tiny.cloud/1/ixbz2acyqjwee701vfb10g4pz207qultrubbzs5s9waymd01/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
     
   <ul class="menu" id="menu">
     <h5 class="menu-item"><li><a href="#">Recipes</a></li></h5>
-    <h5 class="menu-item"><li><a href="#">Search</a></li></h5>
+    <h5 class="menu-item"><li><a href="<?php echo site_url(); ?>/search.php">Search</a></li></h5>
     <h5 class="menu-item"><li><a href="<?php echo site_url(); ?>/list.php">Account</a></li><h5>
   </ul>
   
