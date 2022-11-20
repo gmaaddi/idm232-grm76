@@ -148,7 +148,72 @@ body {
 
 .page-title {
 	text-align: center;
-	margin: 64px 0 32px;
+	margin: 64px 16px 32px;
+}
+
+.page-description {
+	text-align: center;
+	color: #815457;
+	margin: 0 16px;
+}
+
+.input-textarea {
+	margin-right: 16px;
+}
+
+.top-container {
+	width: 100%;
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: #FEEEDE;
+}
+
+.top-container__index {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 64px;
+}
+
+.top-container-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.index-title {
+	text-align: left;
+	color: #EE6055;
+}
+
+.index-description {
+	text-align: left;
+	margin-top: 32px;
+	color: #F78A4D;
+}
+
+.search-bar {
+	width: 40%;
+	border-radius: 55px;
+	border: none;
+	padding: 10px;
+	filter: drop-shadow(0 0 0.15rem gray);
+	margin-right: 8px;
+}
+
+.search-btn {
+	padding: 10px;
+	background-color: #FEEEDE;
+}
+
+.search-bar-container {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 48px;
+	/* width: 60%; */
 }
 
 .my-recipes__container {
@@ -212,8 +277,8 @@ header{
 }
   
 .logo {
-	  display: flex;
-	  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
   
 .pink {
@@ -422,6 +487,7 @@ table {
 
 .recipe-input {
 	margin-left: 16px;
+	width: 250px;
 }
 
 /* MEDIA QUERIES */
@@ -469,6 +535,42 @@ table {
 	}
 }
 
+
+@media (max-width: 1000px) {
+	/* .top-container {
+		width: 100%;
+		padding-top: 96px;
+		padding-bottom: 96px;
+		background-color: #FEEEDE;
+	} */
+	
+	.top-container__index {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 64px;
+	}
+	
+	/* .top-container-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	} */
+	
+	.index-title {
+		text-align: left;
+		color: #EE6055;
+		font-size: 50.52px;
+	}
+	
+	.index-description {
+		text-align: left;
+		margin-top: 32px;
+		color: #F78A4D;
+		font-size: 28.43px;
+	}
+}
 
 @media (max-width: 900px) {
 	.detail-text-title {
@@ -551,6 +653,17 @@ table {
 
 	.recipe-container {
 		margin: auto 32px;
+	}
+
+	.top-container__index {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-container-wrapper {
+		flex-direction: column;
+		margin: 0 32px;
 	}
 }
 
