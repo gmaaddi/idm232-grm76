@@ -57,13 +57,13 @@ if ($result->num_rows > 0) {
     </div>
 
     <div class="recipe-input-row">
-        <h5>Ingredients:</h5>
-        <input class="recipe-input" type="text" name="Ingredients" value="<?php echo $recipe_row['Ingredients']?>"></input>
+        <h5 class="input-textarea">Ingredients:</h5>
+        <textarea name="Ingredients" id="" cols="30" rows="10"> <?php echo $recipe_row['Ingredients']; ?></textarea>
     </div>
 
     <div class="recipe-input-row">
-        <h5>Directions:</h5>
-        <input class="recipe-input" type="text" name="Directions" value="<?php echo $recipe_row['Directions']?>"></input>
+        <h5 class="input-textarea">Directions:</h5>
+        <textarea name="Directions" id="" cols="30" rows="10"> <?php echo $recipe_row['Directions']; ?></textarea>
     </div>
 
     <div class="submit-btn-container">

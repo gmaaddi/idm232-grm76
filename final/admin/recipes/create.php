@@ -47,13 +47,15 @@ $result = mysqli_query($db_connection, $query);
     </div>
 
     <div class="recipe-input-row">
-        <h5>Ingredients:</h5>
-        <input class="recipe-input" type="text" name="Ingredients"></input>
+        <h5 class="input-textarea">Ingredients:</h5>
+        <!-- <input class="recipe-input" type="text" name="Ingredients"></input> -->
+        <textarea name="Ingredients" id="" cols="30" rows="10"></textarea>
     </div>
 
     <div class="recipe-input-row">
-        <h5>Directions:</h5>
-        <input class="recipe-input" type="text" name="Directions"></input>
+        <h5 class="input-textarea">Directions:</h5>
+        <!-- <input class="recipe-input" type="text" name="Directions"></input> -->
+        <textarea name="Directions" id="" cols="30" rows="10"></textarea>
     </div>
 
     <div class="submit-btn-container">
