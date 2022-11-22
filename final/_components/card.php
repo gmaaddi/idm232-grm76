@@ -19,10 +19,12 @@ if (!isset($recipe_results)) {
         {
             echo
             "
-                <div class='card'>
-                    <img src='{$site_url}{$recipe_row['Image_path']}' class='card-img' alt='recipe-image'> 
-                    <h5 class='card-title'>{$recipe_row['Recipe_name']}</h5>
-                 </div>
+                    <div class='card'>
+                        <a class='card-link' href='{$site_url}/recipe-details.php?Id={$recipe_row['Id']}'>
+                        <img src='{$site_url}{$recipe_row['Image_path']}' class='card-img' alt='recipe-image'> 
+                        <h5 class='card-title'>{$recipe_row['Recipe_name']}</h5>
+                        </a>
+                    </div>
             ";
             
             // echo $recipe_row['Recipe_name'];
