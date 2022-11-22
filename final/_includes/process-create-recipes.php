@@ -11,6 +11,7 @@ $Servings_value = $_POST['Servings'];
 $Prep_time_value = $_POST['Prep_time'];
 $Cook_time_value = $_POST['Cook_time'];
 $Total_time_value = $_POST['Total_time'];
+$Image_path_value = $_POST['Image_path'];
 $Ingredients_value = $_POST['Ingredients'];
 $Directions_value = $_POST['Directions'];
 
@@ -23,6 +24,7 @@ $result = add_recipe(
     $Prep_time_value,
     $Cook_time_value,
     $Total_time_value,
+    $Image_path_value,
     $Ingredients_value,
     $Directions_value,
 );
@@ -34,8 +36,8 @@ if ($result) {
     redirect_to('/list.php');
 }
  else {
-    $error_message = 'Sorry there was an error creating the recipe';
+    // $error_message = 'Sorry there was an error creating the recipe';
     // echo $result;
-    redirect_to('/admin/recipes?error=' . $error_message);
+    // redirect_to('/admin/recipes?error=' . $error_message);
 }
 ?>
