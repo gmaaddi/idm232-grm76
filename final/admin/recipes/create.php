@@ -47,6 +47,11 @@ $result = mysqli_query($db_connection, $query);
     </div>
 
     <div class="recipe-input-row">
+        <h5>Recipe Image:</h5>
+        <input class="recipe-input" type="text" name="Image_path"></input>
+    </div>
+
+    <div class="recipe-input-row">
         <h5 class="input-textarea">Ingredients:</h5>
         <!-- <input class="recipe-input" type="text" name="Ingredients"></input> -->
         <textarea name="Ingredients" id="" cols="30" rows="10"></textarea>

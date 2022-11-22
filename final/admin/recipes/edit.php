@@ -57,6 +57,11 @@ if ($result->num_rows > 0) {
     </div>
 
     <div class="recipe-input-row">
+        <h5>Recipe Image:</h5>
+        <input class="recipe-input" type="text" name="Image_path" value="<?php echo $recipe_row['Image_path']?>"></input>
+    </div>
+
+    <div class="recipe-input-row">
         <h5 class="input-textarea">Ingredients:</h5>
         <textarea name="Ingredients" id="" cols="30" rows="10"> <?php echo $recipe_row['Ingredients']; ?></textarea>
     </div>
