@@ -67,12 +67,20 @@ else{
     }?>
 </div>
 
-<div>
+<div class="card-container">
     <?php
+    $site_url = site_url();
     // If we have results, show them
       if ($recipe_results) {
           while ($recipe_results = mysqli_fetch_assoc($results)) {
-              echo '<p>' . $recipe_results['Recipe_name']; '</p>';
+            //   echo '<p>' . $recipe_results['Recipe_name']; '</p>';
+            echo 
+            "
+                <div class='card'>
+                    <img src='{$site_url}{$recipe_results['Image_path']}' class='card-img' alt='recipe-image'>  
+                    <h5 class='card-title'>{$recipe_results['Recipe_name']}</h5>
+                </div>
+           ";
           }
       }
     ?>
