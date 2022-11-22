@@ -57,7 +57,7 @@ else{
         <button class="search-btn" type="submit">Search</button>
     </form>
 
-    <p><?php echo $search_string; ?></p>
+    <p class='search-results-text'><?php echo $search_string; ?></p>
     <p><?php echo $result_string; ?></p>
 
     <?php

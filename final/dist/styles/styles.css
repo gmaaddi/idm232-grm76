@@ -149,6 +149,7 @@ body {
 .page-title {
 	text-align: center;
 	margin: 64px 16px 32px;
+	color: #EE6055;
 }
 
 .page-description {
@@ -216,6 +217,11 @@ body {
 	justify-content: center;
 	margin-top: 48px;
 	/* width: 60%; */
+}
+
+.search-results-text {
+	text-align: center;
+	margin-top: 16px;
 }
 
 .my-recipes__container {
@@ -490,6 +496,10 @@ table {
 .recipe-input {
 	margin-left: 16px;
 	width: 250px;
+}
+
+.heading {
+	margin-top: 64px;
 }
 
 .all-btn {

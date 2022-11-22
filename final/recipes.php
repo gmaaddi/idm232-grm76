@@ -7,7 +7,7 @@ include_once __DIR__ . '/_components/header.php';
 
 <div class="main">
 <div class="featured-container">
-        <h3 class="featured-text">All Recipes</h3>
+        <h3 class="page-title">All Recipes</h3>
         <?php include __DIR__ . '/_components/card.php'; ?>
     </div>
 </div>
