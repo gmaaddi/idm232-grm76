@@ -34,7 +34,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   </div>
     
   <ul class="menu" id="menu">
-    <h5 class="menu-item"><li><a href="#">Recipes</a></li></h5>
+    <h5 class="menu-item"><li> <a href="<?php echo site_url(); ?>/recipes.php">Recipes</a></li></h5>
     <h5 class="menu-item"><li><a href="<?php echo site_url(); ?>/search.php">Search</a></li></h5>
     <h5 class="menu-item"><li><a href="<?php echo site_url(); ?>/list.php">Account</a></li><h5>
   </ul>
