@@ -1,4 +1,3 @@
-
 <?php
 $recipe_results = get_recipes();
 if (!isset($recipe_results)) {
@@ -26,17 +25,12 @@ if (!isset($recipe_results)) {
                         </a>
                     </div>
             ";
-            
-            // echo $recipe_row['Recipe_name'];
         }
     }
     else
     {
         echo "No recipe found";
     }
-
-
-
     // if ($result->num_rows > 0) {
     //     $recipe_results = true;
     // } else {
