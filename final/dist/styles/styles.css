@@ -509,6 +509,10 @@ table {
 	justify-content: center;
 }
 
+.recipe-link {
+	color: #815457;
+}
+
 .featured-text {
 	color: #EE6055;
 	/* margin-top: 100px; */
@@ -531,7 +535,7 @@ table {
 
 .card {
 	width: 237px;
-	height: 400px;
+	height: 424px;
 	object-fit: cover;
 	background-color: white;
 	margin: 32px;
@@ -542,10 +546,13 @@ table {
 .card-container {
 	display: flex;
 	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 .card-img {
 	margin: 0;
+	object-fit: cover;
+	height: 237px;
 }
 
 .card-title {
