@@ -43,7 +43,11 @@ if (!isset($recipe_results)) {
                 <tbody>
                 <tr>
                     <td data-label='Id'><h5>{$recipe_row['Id']}</h5></td>
-                    <td data-label='Recipe Name'><h5>{$recipe_row['Recipe_name']}</h5></td>
+                    <td data-label='Recipe Name'>
+                        <a href='{$site_url}/recipe-details.php?Id={$recipe_row['Id']}'>
+                        <h5 class='recipe-link'>{$recipe_row['Recipe_name']}</h5>
+                        </a>
+                    </td>
                     <td data-label='Level'><h5>{$recipe_row['Level']}</h5></td>
                     <td data-label='Servings'><h5>{$recipe_row['Servings']}</h5></td>
                     <td data-label='Actions'>
