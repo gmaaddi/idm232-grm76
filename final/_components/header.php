@@ -17,6 +17,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $document_title ; ?></title>
+  <link rel="icon" type="image/png" href="<?php echo site_url(); ?>/dist/images/favicon.png">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/styles.css">
   <link rel="normalize" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
 
