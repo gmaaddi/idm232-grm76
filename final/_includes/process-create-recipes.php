@@ -5,16 +5,16 @@ if (!$_POST) {
 }
 include __DIR__ . '/../app.php';
 
-$Recipe_name_value = $_POST['Recipe_name'];
-$Level_value = $_POST['Level'];
-$Servings_value = $_POST['Servings'];
-$Prep_time_value = $_POST['Prep_time'];
-$Cook_time_value = $_POST['Cook_time'];
-$Total_time_value = $_POST['Total_time'];
-$Image_path_value = $_POST['Image_path'];
-$Ingredients_value = $_POST['Ingredients'];
-$Directions_value = $_POST['Directions'];
-
+// Store $_POST data to variables for readability
+$Recipe_name_value = sanitize_value($_POST['Recipe_name']);
+$Level_value = sanitize_value($_POST['Level']);
+$Servings_value  = sanitize_value($_POST['Servings']);
+$Prep_time_value = sanitize_value($_POST['Prep_time']);
+$Cook_time_value = sanitize_value($_POST['Cook_time']);
+$Total_time_value = sanitize_value($_POST['Total_time']);
+$Image_path_value = sanitize_value($_POST['Image_path']);
+$Ingredients_value = sanitize_value($_POST['Ingredients']);
+$Directions_value = sanitize_value($_POST['Directions']);
 
 $result = add_recipe(
     // $Id_value,
