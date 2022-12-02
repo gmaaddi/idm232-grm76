@@ -559,6 +559,12 @@ table {
 	padding: 8px;
 }
 
+.results {
+	text-align: center;
+	margin: 16px auto 0;
+	color: #EE6055;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 980px) {
