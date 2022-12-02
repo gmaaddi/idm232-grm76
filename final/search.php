@@ -3,7 +3,7 @@
 include_once __DIR__ . '/app.php';
 $page_title = 'Search';
 include_once __DIR__ . '/_components/header.php';
-$get_recipes = get_recipes();
+$recipe_results = get_recipes();
 
 // Check if search exist in query
 if (isset($_GET['search'])) {
@@ -21,29 +21,17 @@ $query .= " OR Level LIKE '%{$search}%'";
 $query .= " OR Ingredients LIKE '%{$search}%'";
 $results = mysqli_query($db_connection, $query);
 
-if ( $search_string){
+if ($results->num_rows > 0) {
     $recipe_results = true;
-}
-else{
+} else {
     $recipe_results = false;
-    
 }
 
-
- $result_string = '';
-// $myResults = mysqli_fetch_assoc($results);
-
-// if ($myResults == NULL){
-//     $result_string .= 'Results not found';
-// }
-
-// Check if was have more than 0 results from db
-// if ($results->num_rows > 0) {
-//     $recipe_results = true;
-//     echo $results->num_rows;
-// } else {
+// if ($search_string === '') {
 //     $recipe_results = false;
-//     echo 'I am here';
+// }
+// else {
+//     $recipe_results = true; 
 // }
 ?>
 
@@ -58,28 +46,31 @@ else{
     </form>
 
     <p class='search-results-text'><?php echo $search_string; ?></p>
-    <p><?php echo $result_string; ?></p>
 
     <?php
     // If error query param exist, show error message
     if (isset($_GET['error'])) {
         echo '<p>' . $_GET['error'] . '</p>';
-    }?>
+    }
+
+    if (!$recipe_results && $search_string != '') {
+        echo '<b><p class="results">No results found</p></b>';
+    }
+    ?>
 </div>
 
 <div class="card-container">
     <?php
     $site_url = site_url();
     // If we have results, show them
-      if ($recipe_results) {
-          while ($recipe_results = mysqli_fetch_assoc($results)) {
-            //   echo '<p>' . $recipe_results['Recipe_name']; '</p>';
+      if ($recipe_results && $search_string != '') {
+          while ($recipe_row = mysqli_fetch_assoc($results)) {
             echo 
             "
             <div class='card'>
-                <a class='card-link' href='{$site_url}/recipe-details.php?Id={$recipe_results['Id']}'>
-                    <img src='{$site_url}{$recipe_results['Image_path']}' class='card-img' alt='recipe-image'> 
-                    <h5 class='card-title'>{$recipe_results['Recipe_name']}</h5>
+                <a class='card-link' href='{$site_url}/recipe-details.php?Id={$recipe_row['Id']}'>
+                    <img src='{$site_url}{$recipe_row['Image_path']}' class='card-img' alt='recipe-image'> 
+                    <h5 class='card-title'>{$recipe_row['Recipe_name']}</h5>
                 </a>
             </div>
            ";
