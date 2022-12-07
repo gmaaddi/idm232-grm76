@@ -26,13 +26,6 @@ if ($results->num_rows > 0) {
 } else {
     $recipe_results = false;
 }
-
-// if ($search_string === '') {
-//     $recipe_results = false;
-// }
-// else {
-//     $recipe_results = true; 
-// }
 ?>
 
 <div class="top-container">
@@ -59,7 +52,7 @@ if ($results->num_rows > 0) {
     ?>
 </div>
 
-<div class="card-container">
+<div class="card-container search-card-container">
     <?php
     $site_url = site_url();
     // If we have results, show them
