@@ -24,8 +24,10 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/list.php');
+    // redirect_to('/list.php');
+    redirect_to('/admin/recipes/index.php');
 } else {
     $error_message = 'Recipe was not updated';
+    redirect_to('/admin/recipes?error=' . $error_message);
     // redirect_to('/admin/users?error=' . $error_message);
 }

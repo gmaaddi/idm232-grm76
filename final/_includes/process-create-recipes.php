@@ -33,11 +33,15 @@ $result = add_recipe(
 if ($result) {
 //     echo "redirecting!!!";
     // redirect_to('/admin/recipes');
-    redirect_to('/list.php');
+    // redirect_to('/list.php');
+    redirect_to('/admin/recipes/index.php');
 }
  else {
     // $error_message = 'Sorry there was an error creating the recipe';
     // echo $result;
     // redirect_to('/admin/recipes?error=' . $error_message);
+
+    $error_message = 'Sorry there was an error creating the recipe ' . mysqli_error($db_connection);
+    redirect_to('/admin/recipes?error=' . $error_message);
 }
 ?>
