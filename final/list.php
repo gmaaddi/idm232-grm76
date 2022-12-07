@@ -44,7 +44,7 @@ if (!isset($recipe_results)) {
                 <tr>
                     <td data-label='Id'><h5>{$recipe_row['Id']}</h5></td>
                     <td data-label='Recipe Name'>
-                        <a href='{$site_url}/recipe-details.php?Id={$recipe_row['Id']}'>
+                        <a href='{$site_url}/recipe-details.php?Id={$recipe_row['Id']}' class='table-recipe'>
                         <h5 class='recipe-link'>{$recipe_row['Recipe_name']}</h5>
                         </a>
                     </td>
