@@ -8,7 +8,7 @@ include_once __DIR__ . '/_components/header.php';
 <div class="top-container">
     <div class="top-container-wrapper">
         <div class="top-container__index">
-            <h1 class="index-title"><span class="pink">Delish</span><span class="orange">Dishes</span> <br>for every meal</h1>
+            <div class="top-container-span"><h1 class="index-title"><span class="pink">Delish</span><span class="orange">Dishes</span></h1></div> <h1 class="index-title"><br>for every meal</h1>
             <h3 class="index-description">Browse or search to find recipes perfect for each meal. What will you make next?</h3>
         </div>
 
