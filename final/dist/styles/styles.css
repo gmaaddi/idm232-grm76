@@ -451,7 +451,11 @@ table {
  button:hover {
 	background-color: #EE6055;
 	color: #FCF9EB;
-	transition: ease-in-out 0.3s;
+	transition: ease-in 0.2s;
+}
+
+button:not(:hover) {
+    transition: 0.2s ease-out;
 }
 
 .recipe-input-container {
