@@ -1,48 +1,8 @@
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../../fonts/Poppins-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../../fonts/Poppins-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../../fonts/Poppins-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../../fonts/Poppins-SemiBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Italic';
-    src: url('../../fonts/Poppins-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-	/* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
+	font-family: 'Poppins', sans-serif;
 }
 
 h1 {

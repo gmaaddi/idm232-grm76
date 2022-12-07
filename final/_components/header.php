@@ -21,6 +21,10 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/styles.css">
   <link rel="normalize" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tiny.cloud/1/ixbz2acyqjwee701vfb10g4pz207qultrubbzs5s9waymd01/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 
