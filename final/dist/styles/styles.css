@@ -332,7 +332,11 @@ a {
 	font-size: 18px;
 	font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
 	color: #282828;
-	/* padding: 5px; */
+	padding: 5px;
+}
+
+.btn-link{
+	padding: 0;
 }
   
 .menu {
