@@ -6,33 +6,33 @@
 }
 
 h1 {
-    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif; */
     font-size: 67.34px;
 }
 
 h2 {
-    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif; */
     font-size: 50.52px;
     color: #EE6055;
 }
 
 h3 {
-    font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif; */
     font-size: 37.9px;
 }
 
 h4 {
-    font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
     font-size: 28.43px;
 }
 
 h5 {
-    font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
     font-size: 21.33px;
 }
 
 p {
-    font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+    /* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
     /* font-size: 16px; */
 	font-size: 21.33px;
 	color: #815457
@@ -217,7 +217,7 @@ body {
 
 .step-text {
 	color: #815457;
-	font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+	/* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
 }
 
 .bottom {
@@ -297,7 +297,7 @@ li > a:hover:before {
 a {
 	text-decoration: none;
 	font-size: 18px;
-	font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif;
+	/* font-family: 'Poppins-Bold', Arial, Helvetica, sans-serif; */
 	color: #282828;
 	padding: 5px;
 }
@@ -425,7 +425,7 @@ button:not(:hover) {
 
 .file-btn {
 	background-color: #FEEEDE;
-	font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+	/* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
     font-size: 21.33px;
 	margin-left: 16px;
 }
@@ -438,7 +438,7 @@ button:not(:hover) {
 
 .submit-btn {
 	background-color: #FEEEDE;
-	font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
+	/* font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif; */
     font-size: 21.33px;
 
 	border: solid 3px #EE6055;
@@ -560,48 +560,7 @@ button:not(:hover) {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 980px) {
-	thead, th {
-	  display: none;
-	}
-	tr, td {
-	  display: block;
-	}
-	tr {
-	  border: 1px solid rgba(0, 0 , 0 ,.15);
-	  margin-bottom: 2rem;
-	}
-	tr {
-		text-align: left;
-	}
-	th {
-		text-align: left;
-	}
-	tr:last-child {
-	  margin-bottom: 0;
-	}
-	tr:nth-child(even) td {
-	  background-color: transparent;
-	}
-	td {
-	  clear: both;
-	  text-align: left;
-	}
-	td:before {
-	  content: attr(data-label)': ';
-	  float: left;
-	  font-weight: bold;
-	  margin-right: 1rem;
-	  font-family: 'Poppins-Regular', Arial, Helvetica, sans-serif;
-	  font-size: 21.33px;
-	  color: #F78A4D;
-	}
-	
-	.action-btn {
-		margin: auto;
-		display: inline-block;
-	}
-}
+
 
 
 @media (max-width: 1200px) {
@@ -643,6 +602,48 @@ button:not(:hover) {
 		margin-top: 32px;
 		color: #F78A4D;
 		font-size: 28.43px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	thead, th {
+	  display: none;
+	}
+	tr, td {
+	  display: block;
+	}
+	tr {
+	  border: 1px solid rgba(0, 0 , 0 ,.15);
+	  margin-bottom: 2rem;
+	}
+	tr {
+		text-align: left;
+	}
+	th {
+		text-align: left;
+	}
+	tr:last-child {
+	  margin-bottom: 0;
+	}
+	tr:nth-child(even) td {
+	  background-color: transparent;
+	}
+	td {
+	  clear: both;
+	  text-align: left;
+	}
+	td:before {
+	  content: attr(data-label)': ';
+	  float: left;
+	  font-weight: bold;
+	  margin-right: 1rem;
+	  font-size: 21.33px;
+	  color: #F78A4D;
+	}
+	
+	.action-btn {
+		margin: auto;
+		display: inline-block;
 	}
 }
 
