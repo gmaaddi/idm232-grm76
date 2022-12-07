@@ -26,13 +26,13 @@ if($check_recipe)
                 <div class='detail-text'>
                     <h2 class='detail-text-title'>{$recipe_row['Recipe_name']}</h2> <br>
         
-                    <p class='detail-paragraph'>
+                    <h5 class='detail-paragraph'>
                         <b>Level: </b> {$recipe_row['Level']} <br>
                         <b>Servings: </b>{$recipe_row['Servings']}<br>
                         <b>Prep Time: </b>{$recipe_row['Prep_time']}<br>
                         <b>Cook Time: </b>{$recipe_row['Cook_time']}<br>
                         <b>Total Time: </b>{$recipe_row['Total_time']}<br>
-                    </p>
+                    </h5>
                 </div>
         
                 <img src='{$site_url}{$recipe_row['Image_path']}' class='detail-img' alt='recipe-image'> 
@@ -41,7 +41,7 @@ if($check_recipe)
             <section class='recipe-details'>
                 <div class='recipe-container'>
                     <h2 class='heading'>Ingredients</h2> <hr> <br>
-                    <b>{$recipe_row['Ingredients']}</b>
+                    {$recipe_row['Ingredients']}
 
                     <h2 class='heading'>Directions</h2> <hr>
                     {$recipe_row['Directions']}
