@@ -70,7 +70,7 @@ if ($result->num_rows > 0) {
     </div>
 
     <div class="submit-btn-container">
-        <input class="submit-btn" type="submit" value="Update Recipe">
+        <input class="button fill-btn submit-btn" type="submit" value="Update Recipe">
     </div>
 
     <input type="hidden" name="Id" value="<?php echo $_GET['Id']?>">

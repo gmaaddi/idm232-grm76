@@ -31,24 +31,24 @@ $document_title = $page_title . ' | ' . $site_title; // Home | DelishDishes
 <body>
 
 <header>
-  <div class="logo-section">    
+  <div class="logo-container">    
     <a class="logo" href="<?php echo site_url(); ?>/index.php">
-        <h4><span class="pink">Delish</span></h4>
-        <h4><span class="orange">Dishes</span></h4>
+        <h4><span class="delish-span">Delish</span></h4>
+        <h4><span class="dishes-span">Dishes</span></h4>
     </a>
   </div>
     
-  <ul class="menu" id="menu">
+  <ul class="menu-container" id="menu">
     <li class="menu-item">
-      <a href="<?php echo site_url(); ?>/recipes.php">Recipes</a>
+      <a href="<?php echo site_url(); ?>/recipes.php" class="menu-item__link">Recipes</a>
     </li>
 
     <li class="menu-item">
-      <a href="<?php echo site_url(); ?>/search.php">Search</a>
+      <a href="<?php echo site_url(); ?>/search.php" class="menu-item__link">Search</a>
     </li>
 
     <li class="menu-item">
-      <a href="<?php echo site_url(); ?>/admin/recipes/index.php">Account</a>
+      <a href="<?php echo site_url(); ?>/admin/recipes/index.php" class="menu-item__link">Account</a>
     </li>
   </ul>
   

@@ -39,10 +39,10 @@ if($check_recipe)
 
             <section class='recipe-details'>
                 <div class='recipe-container'>
-                    <h2 class='heading'>Ingredients</h2> <hr> <br>
+                    <h2 class='recipe-heading'>Ingredients</h2> <hr> <br>
                     {$recipe_row['Ingredients']}
 
-                    <h2 class='heading'>Directions</h2> <hr>
+                    <h2 class='recipe-heading'>Directions</h2> <hr>
                     {$recipe_row['Directions']}
                 </div>
             </section>

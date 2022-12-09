@@ -61,7 +61,7 @@ $result = mysqli_query($db_connection, $query);
     </div>
 
     <div class="submit-btn-container">
-        <input class="submit-btn" type="submit" value="Submit Recipe">
+        <input class="button fill-btn submit-btn" type="submit" value="Submit Recipe">
     </div>
 
 </form>
