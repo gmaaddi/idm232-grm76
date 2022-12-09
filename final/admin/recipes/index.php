@@ -17,19 +17,19 @@ if (!isset($recipe_results)) {
 <div class="my-recipes__container">
     <h2 class="page-title">My Recipes</h2>
     
-    <a href="<?php echo site_url(); ?>/admin/recipes/create.php"><button class="add-recipe-btn"><h5>+ Add New Recipe</h5></button></a>
+    <a href="<?php echo site_url(); ?>/admin/recipes/create.php" class="fill-btn button">+ Add New Recipe</a>
 </div>
 
 
 <div class="table-container">
-<table border=1 frame=void rules=rows>
+<table>
   <thead>
     <tr>
-    <th scope="col"><h5>ID</h5></th>
-      <th scope="col"><h5>Recipe Name</h5></th>
-      <th scope="col"><h5>Level</h5></th>
-      <th scope="col"><h5>Servings</h5></th>
-      <th scope="col"><h5>Actions</h5></th>
+    <th scope="col">ID</th>
+      <th scope="col">Recipe Name</th>
+      <th scope="col">Level</th>
+      <th scope="col">Servings</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
 
@@ -50,14 +50,13 @@ if (!isset($recipe_results)) {
                     </td>
                     <td data-label='Level'><h5>{$recipe_row['Level']}</h5></td>
                     <td data-label='Servings'><h5>{$recipe_row['Servings']}</h5></td>
-                    <td data-label='Actions'>
-                        <a href='{$site_url}/admin/recipes/edit.php?Id={$recipe_row['Id']}' class='btn-link'> <button class='action-btn'><h5>Edit</h5></button></a>
-                        <a href='{$site_url}/admin/recipes/delete.php?Id={$recipe_row['Id']}' class='btn-link'> <button class='action-btn'><h5>Delete</h5></button></a>
+                    <td data-label='Actions' class='actions'>
+                        <a href='{$site_url}/admin/recipes/edit.php?Id={$recipe_row['Id']}' class='btn-link button fill-btn action-btn'>Edit</a>
+                        <a href='{$site_url}/admin/recipes/delete.php?Id={$recipe_row['Id']}' class='btn-link button fill-btn action-btn'>Delete</a>
                     </td>
                 </tr>
 
                 </tbody>
-                </div>
             ";
         // '<pre>';
         // var_dump ($recipe_row['Id']);

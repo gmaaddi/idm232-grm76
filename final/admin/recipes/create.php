@@ -18,53 +18,51 @@ $result = mysqli_query($db_connection, $query);
     <form class="add-recipe" action="<?php echo site_url(); ?>/_includes/process-create-recipes.php" method="POST">
     <div class="recipe-input-row">
         <h5>Recipe Name:</h5>
-        <input class="recipe-input" type="text" name="Recipe_name"></input>
+        <input class="recipe-input" type="text" name="Recipe_name">
     </div>
 
     <div class="recipe-input-row">
         <h5>Level:</h5>
-        <input class="recipe-input" type="text" name="Level"></input>
+        <input class="recipe-input" type="text" name="Level">
     </div>
 
     <div class="recipe-input-row">
         <h5>Servings:</h5>
-        <input class="recipe-input" type="text" name="Servings"></input>
+        <input class="recipe-input" type="text" name="Servings">
     </div>
 
     <div class="recipe-input-row">
         <h5>Prep Time:</h5>
-        <input class="recipe-input" type="text" name="Prep_time"></input>
+        <input class="recipe-input" type="text" name="Prep_time">
     </div>
 
     <div class="recipe-input-row">
         <h5>Cook Time:</h5>
-        <input class="recipe-input" type="text" name="Cook_time"></input>
+        <input class="recipe-input" type="text" name="Cook_time">
     </div>
 
     <div class="recipe-input-row">
         <h5>Total Time:</h5>
-        <input class="recipe-input" type="text" name="Total_time"></input>
+        <input class="recipe-input" type="text" name="Total_time">
     </div>
 
     <div class="recipe-input-row">
         <h5>Recipe Image:</h5>
-        <input class="recipe-input" type="text" name="Image_path"></input>
+        <input class="recipe-input" type="text" name="Image_path">
     </div>
 
     <div class="recipe-input-row">
         <h5 class="input-textarea">Ingredients:</h5>
-        <!-- <input class="recipe-input" type="text" name="Ingredients"></input> -->
-        <textarea name="Ingredients" id="" cols="30" rows="10"></textarea>
+        <textarea name="Ingredients" cols="30" rows="10"></textarea>
     </div>
 
     <div class="recipe-input-row">
         <h5 class="input-textarea">Directions:</h5>
-        <!-- <input class="recipe-input" type="text" name="Directions"></input> -->
-        <textarea name="Directions" id="" cols="30" rows="10"></textarea>
+        <textarea name="Directions" cols="30" rows="10"></textarea>
     </div>
 
     <div class="submit-btn-container">
-        <input class="submit-btn" type="submit" value="Submit Recipe"></input>
+        <input class="submit-btn" type="submit" value="Submit Recipe">
     </div>
 
 </form>

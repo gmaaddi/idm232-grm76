@@ -13,7 +13,7 @@ include_once __DIR__ . '/_components/header.php';
         </div>
 
         <div class="top-container-img">
-            <img src="dist/images/index-dishes.png"></img>
+            <img src="dist/images/index-dishes.png" alt="three dishes">
          </div>
     </div>
 </div>
@@ -62,7 +62,7 @@ if (!isset($recipe_results)) {
 ?>
 </div>
         <div class="all-btn">
-            <a href="<?php echo site_url(); ?>/recipes.php"><button><h5>View All Recipes</h5></button></a>
+            <a href="<?php echo site_url(); ?>/recipes.php" class="button fill-btn">View All Recipes</a>
         </div>
     </div>
 </div>

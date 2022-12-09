@@ -35,7 +35,7 @@ if ($results->num_rows > 0) {
     <form action="<?php echo site_url(); ?>/search.php" method="GET" class="search-bar-container">
         <input class="search-bar" type="text" name="search" id="search" placeholder="Search recipes"
         value="<?php echo $search; ?>">
-        <button class="search-btn" type="submit">Search</button>
+        <button class="search-btn fill-btn" type="submit">Search</button>
     </form>
 
     <p class='search-results-text'><?php echo $search_string; ?></p>
