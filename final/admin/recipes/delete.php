@@ -11,7 +11,6 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    // redirect_to('../../final/list.php');
     redirect_to('../../final/admin/recipes/index.php');
 } else {
     $error_message = 'Could Not Delete Recipe: ' . mysqli_error($db_connection);

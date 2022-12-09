@@ -1,5 +1,4 @@
 <?php
-// Make sure the path is correct for each include on this page. Delete this comment once done
 include_once __DIR__ . '/../../app.php';
 $page_title = 'Edit Recipe';
 include_once __DIR__ . '/../../_components/header.php';
@@ -7,15 +6,14 @@ include_once __DIR__ . '/../../_components/header.php';
 ?>
 
 <?php
-// get users data from database
+// get recipes data from database
 $query = "SELECT * FROM recipes WHERE Id = {$_GET['Id']}";
 $result = mysqli_query($db_connection, $query);
 if ($result->num_rows > 0) {
-    // Get row from results and assign to $user variable;
     $recipe_row = mysqli_fetch_assoc($result);
 } else {
     $error_message = 'Recipe does not exist';
-    // redirect_to('/admin/users?error=' . $error_message);
+    redirect_to('/admin/recipes?error=' . $error_message);
 }
 
 ?>

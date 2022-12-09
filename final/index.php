@@ -54,11 +54,6 @@ if (!isset($recipe_results)) {
     {
         echo "No recipe found";
     }
-    // if ($result->num_rows > 0) {
-    //     $recipe_results = true;
-    // } else {
-    //     $recipe_results = false;
-    // }
 ?>
 </div>
         <div class="all-btn">
