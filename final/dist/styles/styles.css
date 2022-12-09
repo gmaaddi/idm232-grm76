@@ -174,8 +174,28 @@ body {
 }
 
 .search-btn {
-	padding: 10px;
+	/* padding: 10px; */
 	background-color: #FEEEDE;
+	margin-bottom: 0;
+	height: 39.99px;
+
+	border: solid 3px #EE6055;
+	padding: 4px 16px;
+	border-radius: 32px;
+	color: #EE6055;
+	cursor: pointer;
+	min-width: 108px;
+	/* font-size: 21.33px; */
+}
+
+.fill-btn:hover {
+	background-color: #EE6055;
+	color: #FCF9EB;
+	transition: ease-in 0.2s;
+}
+
+.fill-btn:not(:hover) {
+    transition: 0.2s ease-out;
 }
 
 .search-bar-container {
@@ -250,6 +270,8 @@ header{
   
 .menu-item {
 	color: #EE6055;
+	font-size: 21.33px;
+	font-weight: 700;
 }
   
 .logo {
@@ -303,9 +325,9 @@ a {
 	padding: 5px;
 }
 
-.btn-link{
+/* .btn-link{
 	padding: 0;
-}
+} */
   
 .menu {
 	display: flex;
@@ -375,6 +397,7 @@ table {
   th {
 	background-color: #FCE6D0;
 	color: #EE6055;
+	font-size: 21.33px;
   }
   tr {
 	padding: 0;
@@ -383,14 +406,19 @@ table {
 	vertical-align: middle;
   }
 
+  tbody {
+	border-top: 1px solid #815457;
+  }
+
   .action-btn-container {
 	display: flex;
 	flex-direction: column;
   }
 
   .action-btn {
-	margin: 16px auto;
+	margin: 0 8px 16px;
 	display: block;
+	text-align: center;
   }
 
   /* tr:nth-child(even) td {
@@ -398,7 +426,7 @@ table {
 	border-bottom: 20px red;
   } */
   
-  button {
+  .button {
 	border: solid 3px #EE6055;
 	padding: 4px 16px;
 	border-radius: 32px;
@@ -407,17 +435,19 @@ table {
 	color: #EE6055;
 	cursor: pointer;
 	min-width: 108px;
+	font-size: 21.33px;
+	font-weight: 700;
   }
 
- button:hover {
+ /* .button:hover {
 	background-color: #EE6055;
 	color: #FCF9EB;
 	transition: ease-in 0.2s;
 }
 
-button:not(:hover) {
+.button:not(:hover) {
     transition: 0.2s ease-out;
-}
+} */
 
 .recipe-input-container {
 	background-color: #FEEEDE;
@@ -694,8 +724,12 @@ button:not(:hover) {
 	}
 	
 	.action-btn {
-		margin: auto;
+		/* margin: auto; */
 		display: inline-block;
+	}
+
+	tbody {
+		border: 1px solid #815457;
 	}
 }
 
@@ -774,6 +808,18 @@ button:not(:hover) {
 	.featured-text {
 		margin-left: 0;
 	}
+
+	.actions {
+		display: flex;
+		flex-direction: column;
+		width: 45.99px;
+	}
+
+	.action-btn {
+		margin-top: 8px;
+		margin-left: 0;
+	}
+	
 }
 
 @media (max-width: 540px) {
